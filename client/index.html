@@ -55,11 +55,14 @@
     <script src="js/app/views/NegociacoesView.js"></script>
     <script src="js/app/models/Mensagem.js"></script>
     <script src="js/app/views/MensagemView.js"></script>
-    
     <script>
-        
         let negociacaoController = new NegociacaoController();
-    
     </script>
+    <script>
+        let negociacao = new Proxy(new Negociacao(new Date(), 1, 100), {
+            
+        });
+    </script>
+
 </body>
 </html>
