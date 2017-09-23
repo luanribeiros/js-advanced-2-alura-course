@@ -59,7 +59,7 @@
         let negociacaoController = new NegociacaoController();
     </script>
     <script>
-        let negociacao = new Proxy(new Negociacao(new Date(), 1, 100), {
+        let lista = new Proxy(new ListaNegociacoes(), {
             
             set: (target, prop, value, receiver) => {
 
@@ -69,8 +69,8 @@
 
         });
 
-        negociacao._quantidade = 10;
-        negociacao._valoe = 200;
+        lista.adiciona(new Negociacao(new Date(), 1, 100));
+        
     </script>
 
 </body>
