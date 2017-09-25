@@ -13,7 +13,7 @@ class NegociacaoController{
             get(target, prop, receiver) {
                 if(['adiciona', 'esvazia'].includes(prop) && typeof(target[prop]) == typeof(Function)) {
                     return function() {
-                        console.lgo(`interceptando ${prop}`);
+                        console.log(`interceptando ${prop}`);
                         Reflect.apply(target[prop], target, arguments);
                         self._negociacoesView.update(target);
                     }
