@@ -19,7 +19,7 @@ class NegociacaoController{
 
         this._mensagem = new Bind(
             new Mensagem(),
-            this._mensagemViewm
+            this._mensagemView,
             ['texto']);
         
     }
