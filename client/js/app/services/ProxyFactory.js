@@ -13,7 +13,7 @@ class ProxyFactory{
                 return Reflect.get(target, prop, receiver);
             },
             set(target, prop, value, receiver) {
-                if(props.includes(props)) {
+                if(props.includes(prop)) {
                     acao(target);
                 }
                 return Reflect.set(target, prop, value, receiver); 
@@ -21,6 +21,6 @@ class ProxyFactory{
         });
     }
     static _ehFuncao(func) {
-        return typeof(func) === typeof(Funciton);
+        return typeof(func) === typeof(Function);
     }
 }
