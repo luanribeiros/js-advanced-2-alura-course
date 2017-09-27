@@ -28,7 +28,10 @@ class NegociacaoController{
     }
 
     importaNegociacoes() {
-        alert('ok');
+        let xhr = new XMLHttpRequest();
+
+        xhr.open('GET', 'negociacoes/semana');
+        xhr.send();
     }
 
     apaga() {
