@@ -27,6 +27,10 @@ class NegociacaoController{
         this._limpaFormulario();
     }
 
+    importaNegociacoes() {
+        alert('ok');
+    }
+
     apaga() {
         this._listaNegociacoes.esvazia();
         this._mensagem.texto = 'Negociações apagadas com sucesso';
