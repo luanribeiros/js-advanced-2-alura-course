@@ -29,9 +29,9 @@ class NegociacaoController{
 
     importaNegociacoes() {
         let service = new NegociacaoService();
-        service.obterNegociacoesDaSemana((err, negociacoes) => {
-            if(err) {
-                this._mensagem.texto = err;
+        service.obterNegociacoesDaSemana((erro, negociacoes) => {
+            if(erro) {
+                this._mensagem.texto = erro;
                 return;
             }
             negociacoes.forEach(negociacao => this._listaNegociacoes.adiciona(negociacao));
