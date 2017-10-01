@@ -27,7 +27,10 @@ class NegociacaoController{
         this._limpaFormulario();
     }
 
-    importaNegociacoes() {}
+    importaNegociacoes() {
+        let service = new NegociacaoService();
+        service.obterNegociacoesDaSemana();
+    }
 
     apaga() {
         this._listaNegociacoes.esvazia();

@@ -1,6 +1,6 @@
 class NegociacaoService {
     
-    obterNegociacoesDaSemana() {
+    obterNegociacoesDaSemana(cb) {
 
         let xhr = new XMLHttpRequest();
         
